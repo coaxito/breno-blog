@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://192.168.3.3:1313/blog/</loc>
+    <loc>https://coaxito.com/blog/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.3.3:1313/</loc>
+    <loc>https://coaxito.com/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.3.3:1313/teste/</loc>
+    <loc>https://coaxito.com/teste/</loc>
     <lastmod>2025-04-29T00:00:00+00:00</lastmod>
   </url><url>
-    <loc>http://192.168.3.3:1313/categories/</loc>
+    <loc>https://coaxito.com/categories/</loc>
   </url><url>
-    <loc>http://192.168.3.3:1313/tags/</loc>
+    <loc>https://coaxito.com/tags/</loc>
   </url>
 </urlset>
