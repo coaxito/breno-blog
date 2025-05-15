@@ -1,0 +1,120 @@
+{{- /* seo_tags.html */ -}}
+{{- $siteTitle := .Site.Title -}}
+{{- $pageTitle := .Title -}}
+{{- $permalink := .Permalink -}}
+{{- $isHome := .IsHome -}}
+{{- $isPage := .IsPage -}}
+{{- $isSection := .IsSection -}}
+
+{{- /* Descrição */ -}}
+{{- $description := "" -}}
+{{- if $isPage -}}
+    {{- $description = .Description | default (.Summary | plainify | truncate 160 "...") -}}
+{{- else if $isHome -}}
+    {{- $description = .Site.Params.description -}}
+{{- else -}}
+    {{- $description = printf "Arquivo de %s em %s" .Title .Site.Title -}}
+{{- end -}}
+{{- with $description }}<meta name="description" content="{{ . }}">{{ end -}}
+
+{{- /* URL Canônica */ -}}
+<link rel="canonical" href="{{ $permalink }}">
+
+{{- /* Robots */ -}}
+{{- $robots := "index, follow" -}}
+{{- if or .Params.noindex .Params.robots -}}
+    {{- $robots = .Params.robots | default "noindex, follow" -}}
+{{- end -}}
+<meta name="robots" content="{{ $robots }}">
+
+{{- /* Open Graph Tags */ -}}
+<meta property="og:title" content="{{ if $isHome }}{{ $siteTitle }}{{ else }}{{ $pageTitle }} | {{ $siteTitle }}{{ end }}">
+<meta property="og:description" content="{{ $description }}">
+<meta property="og:url" content="{{ $permalink }}">
+<meta property="og:site_name" content="{{ $siteTitle }}">
+<meta property="og:locale" content="{{ replace .Site.LanguageCode "-" "_" }}"> {{/* Ex: pt_BR */}}
+
+{{- $ogType := "website" -}}
+{{- if $isPage }}{{ $ogType = "article" }}{{ end -}}
+<meta property="og:type" content="{{ $ogType }}">
+
+{{- /* Imagem Open Graph */ -}}
+{{- $ogImage := "" -}}
+{{- if $isPage -}}
+    {{- /* Prioridade 1: Imagem definida no front matter da página */ -}}
+    {{- if .Params.image -}}
+        {{- $ogImage = absURL .Params.image -}}
+    {{- /* Prioridade 2: Page Resource nomeado "featured", "cover", ou "og-image" (requer que a imagem esteja no bundle do post) */ -}}
+    {{- else if .Resources.GetMatch "og-image.*" -}}
+        {{- $ogImage = (.Resources.GetMatch "og-image.*").Permalink -}}
+    {{- else if .Resources.GetMatch "featured.*" -}}
+        {{- $ogImage = (.Resources.GetMatch "featured.*").Permalink -}}
+    {{- else if .Resources.GetMatch "cover.*" -}}
+        {{- $ogImage = (.Resources.GetMatch "cover.*").Permalink -}}
+    {{- end -}}
+{{- end -}}
+{{- /* Prioridade 3 (ou 1 para homepage): Imagem padrão do site */ -}}
+{{- if not $ogImage }}{{ with .Site.Params.defaultOgImage }}{{ $ogImage = absURL . }}{{ end }}{{ end -}}
+
+{{- with $ogImage -}}
+<meta property="og:image" content="{{ . }}">
+{{- /* Tenta adicionar width e height se for uma imagem processada pelo Hugo e tiver esses dados */ -}}
+{{- /* Para imagens 1200x630, pode-se adicionar manualmente ou via lógica mais complexa se a imagem for processada */ -}}
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+{{- end }}
+
+
+{{- /* Twitter Card Tags */ -}}
+<meta name="twitter:card" content="{{ if $ogImage }}summary_large_image{{ else }}summary{{ end }}">
+<meta name="twitter:title" content="{{ if $isHome }}{{ $siteTitle }}{{ else }}{{ $pageTitle }} | {{ $siteTitle }}{{ end }}">
+<meta name="twitter:description" content="{{ $description }}">
+{{- with $ogImage }}<meta name="twitter:image" content="{{ . }}">{{ end -}}
+{{- with .Site.Params.twitterUsername -}}
+<meta name="twitter:site" content="@{{ . }}">
+<meta name="twitter:creator" content="@{{ . }}"> {{/* Pode ser sobrescrito por .Params.authorTwitter no front matter */}}
+{{- end -}}
+
+{{- /* Tags específicas para Artigos (se for uma página de conteúdo) */ -}}
+{{- if eq $ogType "article" -}}
+    <meta property="article:published_time" content="{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}">
+    <meta property="article:modified_time" content="{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}">
+    {{- with .Params.author | default .Site.Params.author }}<meta property="article:author" content="{{ . }}">{{ end -}}
+    {{- range .Params.tags }}<meta property="article:tag" content="{{ . }}">{{ end -}}
+    {{- with .Section }}<meta property="article:section" content="{{ . }}">{{ end -}}
+{{- end -}}
+
+{{- /* Schema.org JSON-LD - Básico */ -}}
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "{{ if $isPage }}BlogPosting{{ else }}WebSite{{ end }}",
+    "name": "{{ if $isPage }}{{ $pageTitle }}{{ else }}{{ $siteTitle }}{{ end }}",
+    "headline": "{{ if $isPage }}{{ $pageTitle }}{{ else }}{{ $description | default $siteTitle }}{{ end }}",
+    "description": "{{ $description }}",
+    "url": "{{ $permalink }}",
+    {{ if $ogImage }}"image": "{{ $ogImage }}",{{ end }}
+    {{ if $isPage -}}
+    "datePublished": "{{ .PublishDate.Format "2006-01-02T15:04:05Z07:00" }}",
+    "dateModified": "{{ .Lastmod.Format "2006-01-02T15:04:05Z07:00" }}",
+    "author": {
+        "@type": "Person",
+        "name": "{{ .Params.author | default (.Site.Params.author | default .Site.Title) }}"
+    },
+    "publisher": {
+        "@type": "Organization",
+        "name": "{{ .Site.Title }}",
+        {{- with .Site.Params.logo }}{{/* Adicione um Site.Params.logo com a URL do seu logo */}}
+        "logo": {
+            "@type": "ImageObject",
+            "url": "{{ absURL . }}"
+        }
+        {{- end }}
+    },
+    {{- end }}
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ $permalink }}"
+    }
+}
+</script>

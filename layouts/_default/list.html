@@ -1,0 +1,21 @@
+{{ define "main" }}
+
+    {{ if .Content }}
+        <div class="section-content">
+            {{ .Content }} {{/* Conteúdo do _index.md da secção, se houver */}}
+        </div>
+    {{ end }}
+
+    {{/* Removi o <h2>Posts</h2> daqui, pois a lista já é autoexplicativa */}}
+    <ul class="post-list-detailed"> {{/* Mudei a classe para post-list-detailed para novo estilo */}}
+        {{ range .Pages.ByDate.Reverse }}
+            <li>
+                <a href="{{ .RelPermalink }}" class="post-title-link">{{ .Title }}</a>
+                <span class="post-date">{{ .Date.Format "02/01/2006" }}</span> {{/* Formato DD-MM-AAAA */}}
+                {{ if .Draft }}
+                    <strong class="draft-notice-inline">(Rascunho)</strong>
+                {{ end }}
+            </li>
+        {{ end }}
+    </ul>
+{{ end }}

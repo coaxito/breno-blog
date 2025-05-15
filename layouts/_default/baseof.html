@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "pt-br" }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ with .Site.Params.subtitle }} - {{ . }}{{ end }}{{ else }}{{ .Title }} | {{ .Site.Title }}{{ end }}</title>
+
+    {{ partial "favicon.html" . }}
+    {{ partial "seo_tags.html" . }}
+
+    <!-- Previne FOUC de tema -->
+    <script>
+      (function() {
+        try {
+          var theme = localStorage.getItem('theme');
+          var systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (theme === 'dark' || (theme === null && systemPrefersDark)) {
+            document.documentElement.classList.add('dark-theme');
+          } else {
+            document.documentElement.classList.remove('dark-theme');
+          }
+        } catch (e) {}
+      })();
+    </script>
+
+    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}">
+    <link rel="icon" href="{{ "/favicon.ico" | relURL }}">
+    {{ with .Site.Params.description }}
+      <meta name="description" content="{{ . }}">
+    {{ end }}
+    
+    {{/* Bloco para CSS adicional ou meta tags específicas da página */}}
+    {{ block "head" . }}{{ end }}
+    
+</head>
+<body>
+   <header id="site-header">
+        <div class="container">
+            <div class="header-inner-content">
+                <div class="site-title-wrapper">
+                    <a class="site-title" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+                </div>
+                <nav id="site-nav" class="site-nav-wrapper">
+                    <ul>
+                        <li><a href="{{ "/blog/" | relLangURL }}">Blog</a></li>
+                        <li>
+                            <button id="theme-toggle" aria-label="Mudar tema" style="background:none; border:none; cursor:pointer; padding:0; line-height: 0;">
+                                <img src="/icons/light_mode.svg" id="theme-icon-img" alt="Mudar tema" loading="lazy">
+                            </button>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main id="site-main" class="container">
+        {{ block "main" . }}
+        {{ end }}
+    </main>
+     
+    {{ partial "footer.html" . }}
+
+<script src="{{ "/js/theme-toggle.js" | relURL }}"></script>
+
+</body>
+</html>

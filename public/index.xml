@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Página Inicial on Breno&#39;s Blog</title>
+    <link>http://192.168.3.3:1313/</link>
+    <description>Recent content in Página Inicial on Breno&#39;s Blog</description>
+    <generator>Hugo</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Tue, 29 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://192.168.3.3:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Teste</title>
+      <link>http://192.168.3.3:1313/teste/</link>
+      <pubDate>Wed, 14 May 2025 00:00:00 +0000</pubDate>
+      <guid>http://192.168.3.3:1313/teste/</guid>
+      <description>Esse texto é apenas um teste.</description>
+    </item>
+  </channel>
+</rss>

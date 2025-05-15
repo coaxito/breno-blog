@@ -1,0 +1,18 @@
+{{ define "main" }}
+    <article class="post">
+        <header class="post-header">
+            <h1>{{ .Title }}</h1>
+            {{ $mesesAbreviados := slice "jan" "fev" "mar" "abr" "mai" "jun" "jul" "ago" "set" "out" "nov" "dez" }}
+            {{ $dia := .Date.Format "2" }}
+            {{ $mesNumero := sub .Date.Month 1 }} {{/* .Month é 1-12, slice é 0-indexado */}}
+            {{ $mesAbreviadoPt := index $mesesAbreviados $mesNumero }}
+            {{ $ano := .Date.Format "2006" }}
+            <p class="post-meta">
+                Publicado em <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}">{{ $dia }} de {{ $mesAbreviadoPt }}, {{ $ano }}</time>
+            </p>
+        </header>
+        <div class="post-content">
+            {{ .Content }}
+        </div>
+    </article>
+{{ end }}

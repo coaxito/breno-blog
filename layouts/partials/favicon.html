@@ -1,0 +1,15 @@
+<link rel="apple-touch-icon" sizes="180x180" href="{{ "/apple-touch-icon.png" | relURL }}">
+<link rel="icon" type="image/png" sizes="96x96" href="{{ "/favicon-96x96.png" | relURL }}">
+{{- if (fileExists "static/favicon-32x32.png") -}}
+<link rel="icon" type="image/png" sizes="32x32" href="{{ "/favicon-32x32.png" | relURL }}">
+{{- end -}}
+{{- if (fileExists "static/favicon-16x16.png") -}}
+<link rel="icon" type="image/png" sizes="16x16" href="{{ "/favicon-16x16.png" | relURL }}">
+{{- end -}}
+<link rel="icon" type="image/svg+xml" href="{{ "/favicon.svg" | relURL }}">
+<link rel="shortcut icon" href="{{ "/favicon.ico" | relURL }}">
+{{- if (fileExists "static/site.webmanifest") -}}
+<link rel="manifest" href="{{ "/site.webmanifest" | relURL }}">
+{{- end -}}
+<meta name="apple-mobile-web-app-title" content="{{ .Site.Title }}">
+<meta name="theme-color" content="#f4f4f4">

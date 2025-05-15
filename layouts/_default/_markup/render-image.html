@@ -1,0 +1,64 @@
+{{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
+
+{{ if $src }}
+  <figure style="margin: 1.5em auto; display: block;">
+    {{ $data := newScratch }}
+    {{ $maxWidthForDisplay := 760 }}
+
+    {{ $originalWidth := $src.Width }}
+    {{ $originalHeight := $src.Height }}
+
+    {{ if gt $originalWidth $maxWidthForDisplay }}
+      {{ $targetWidth := $maxWidthForDisplay }}
+      {{ $resized := $src.Resize (printf "%dx" $targetWidth) }}
+      {{ $data.Set "webp" ($resized.Process "webp q85") }}
+      {{ $data.Set "fallback" ($resized.Process "q85") }}
+      {{ $data.Set "width" $resized.Width }}
+      {{ $data.Set "height" $resized.Height }}
+    {{ else }}
+      {{ $data.Set "webp" ($src.Process "webp q85") }}
+      {{ $data.Set "fallback" ($src.Process "q85") }}
+      {{ $data.Set "width" $originalWidth }}
+      {{ $data.Set "height" $originalHeight }}
+    {{ end }}
+
+    {{ $webp := $data.Get "webp" }}
+    {{ $fallback := $data.Get "fallback" }}
+    {{ $imgWidth := $data.Get "width" }}
+    {{ $imgHeight := $data.Get "height" }}
+
+    <div style="max-width: {{ $imgWidth }}px; margin-left: auto; margin-right: auto;">
+      <picture>
+        <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+        <img src="{{ $fallback.RelPermalink }}"
+             alt="{{ .Text }}"
+             loading="lazy"
+             decoding="async"
+             width="{{ $imgWidth }}"
+             height="{{ $imgHeight }}"
+             style="max-width: 100%; height: auto; display: block;" />
+      </picture>
+    </div>
+
+    {{ with .Title }}
+      <figcaption style="text-align: center; font-size: 0.9em; color: var(--cor-secundaria); margin-top: 0.5em;">
+        {{ . | markdownify }}
+      </figcaption>
+    {{ end }}
+  </figure>
+{{ else }}
+  <figure style="margin: 1.5em auto; max-width: 100%; display: block;">
+    <img src="{{ .Destination | safeURL }}"
+         alt="{{ .Text }}"
+         loading="lazy"
+         width="1200"
+         height="630"
+         style="max-width: 100%; height: auto; display: block;" />
+    {{ with .Title }}
+      <figcaption style="text-align: center; font-size: 0.9em; color: var(--cor-secundaria); margin-top: 0.5em;">
+        {{ . | markdownify }}
+      </figcaption>
+    {{ end }}
+    <p style="color: red; font-size: small; text-align: center;">(Aviso: A imagem '{{ .Destination | safeURL }}' não é um page resource, por isso as otimizações não foram aplicadas.)</p>
+  </figure>
+{{ end }}
