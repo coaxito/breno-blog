@@ -1,0 +1,23 @@
+# Arquivos e pastas gerados pelo Hugo
+/public/
+/resources/_gen/
+/static/uploads/ # Se você tiver uma pasta de uploads que não quer versionar
+.hugo_build.lock
+hugo_stats.json # Gerado com --printProfiling
+
+# Arquivos comuns de Sistema Operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Arquivos de IDEs e editores comuns
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+node_modules/ # Se você usar npm/yarn para algo
+
+# Arquivos de log e temporários
+*.log
+*.tmp
+*.temp
