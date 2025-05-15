@@ -1,0 +1,48 @@
+name: Deploy Breno's Blog to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Aciona o workflow quando há um push para a branch 'main'
+  workflow_dispatch: # Permite acionar manualmente pela interface do GitHub
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    permissions: # Permissões necessárias para o GITHUB_TOKEN
+      contents: read
+      pages: write
+      id-token: write
+    concurrency: # Garante apenas um deploy por vez para 'pages'
+      group: "pages"
+      cancel-in-progress: true
+    environment: # Configura o ambiente de deploy para GitHub Pages
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }} # Mostra a URL do site após o deploy
+    steps:
+      - name: Checkout repository # Baixa seu código do repositório
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # 'true' se você usa temas como submódulos Git
+          fetch-depth: 0    # Necessário para .GitInfo e .Lastmod se você os usa
+
+      - name: Setup Hugo # Configura o ambiente Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: 'latest' # Usa a versão mais recente do Hugo. Você pode fixar uma (ex: '0.125.7')
+          # extended: true # Descomente se seu tema ou CSS usa SASS/SCSS
+
+      - name: Build Hugo site # Constrói seu site Hugo
+        run: hugo --minify # A baseURL é pega do seu hugo.toml
+
+      - name: Setup Pages # Configura o ambiente para o deploy no GitHub Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact # Faz upload do site construído (pasta 'public')
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./public
+
+      - name: Deploy to GitHub Pages # Faz o deploy do artefato para o GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
