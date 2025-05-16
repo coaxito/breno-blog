@@ -9,9 +9,9 @@ tags = ["Música", "Games", "Beyond Good and Evil", "Trilha Sonora", "Nostalgia"
 image = "/images/thumbnails/jade_com_camera.jpg"
 +++
 
-Cresci jogando videogame ao lado da minha irmã Bruna, e Beyond Good and Evil, lançado pela Ubisoft em 2003, marcou profundamente a nossa infância.
+Eu passei toda a minha infância jogando videogame ao lado da minha irmã mais velha, e Beyond Good and Evil, clássico da Ubisoft lançado em 2003, foi um dos maiores marcos da nossa infância.
 
-Foi um dos nossos primeiros encontros com uma narrativa rica e emocionante, que nos fez enxergar a experiência com o videogame como algo ainda mais profundo e complexo — uma forma de arte capaz de despertar sentimentos intensos e transmitir lições valiosas.
+Mais do que especial por ser um dos nossos primeiros encontros com uma narrativa rica e emocionante, que nos fez enxergar a experiência com o videogame como algo ainda mais profundo e complexo — uma forma de arte capaz de despertar sentimentos intensos e transmitir lições valiosas.
 
 ![Jade em Beyond Good and Evil usando sua câmera para fotografar, uma mecânica central do jogo para investigações e documentação da vida selvagem.](jade_com_camera.jpg "Reprodução: Ubisoft")
 
@@ -53,4 +53,4 @@ Sem dúvidas, 'eclética' é a palavra que melhor define a trilha sonora de Beyo
 
 A escolha foi difícil, pois todas as faixas são surpreendentes e contribuem igualmente para a grandiosidade desta obra. Sempre que revisito este clássico, sinto uma nostalgia profunda e um orgulho enorme por ter vivenciado essa experiência.
 
-Um imenso obrigado ao Christophe Héral por compor esta obra-prima, e à minha irmã, por ter compartilhado essa experiência ao meu lado.
+Um imenso obrigado ao Christophe Héral por compor esta obra-prima, e à minha querida irmã, por ter vivido tudo isso meu lado.
