@@ -1,44 +1,36 @@
 {{ $src := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
 
 {{ if $src }}
-  <figure style="margin: 1.5em auto; display: block;">
+  {{/* A imagem é um Page Resource */}}
+  <figure style="margin: 1.5em 0; width: 100%;"> {{/* Figure ocupa 100% da largura do seu contêiner de texto e remove margem lateral auto */}}
     {{ $data := newScratch }}
-    {{ $maxWidthForDisplay := 760 }}
+    {{/* Largura alvo para exibição, correspondendo à largura do seu contêiner de texto */}}
+    {{ $displayWidth := 760 }} 
 
-    {{ $originalWidth := $src.Width }}
-    {{ $originalHeight := $src.Height }}
-
-    {{ if gt $originalWidth $maxWidthForDisplay }}
-      {{ $targetWidth := $maxWidthForDisplay }}
-      {{ $resized := $src.Resize (printf "%dx" $targetWidth) }}
-      {{ $data.Set "webp" ($resized.Process "webp q85") }}
-      {{ $data.Set "fallback" ($resized.Process "q85") }}
-      {{ $data.Set "width" $resized.Width }}
-      {{ $data.Set "height" $resized.Height }}
-    {{ else }}
-      {{ $data.Set "webp" ($src.Process "webp q85") }}
-      {{ $data.Set "fallback" ($src.Process "q85") }}
-      {{ $data.Set "width" $originalWidth }}
-      {{ $data.Set "height" $originalHeight }}
-    {{ end }}
+    {{/* Sempre redimensiona a imagem para a $displayWidth, mantendo a proporção */}}
+    {{ $resized := $src.Resize (printf "%dx" $displayWidth) }}
+    
+    {{ $data.Set "webp" ($resized.Process "webp q85") }}
+    {{ $data.Set "fallback" ($resized.Process "q85") }}
+    {{ $data.Set "width" $resized.Width }}   {{/* Será $displayWidth ou proporcional se a altura for limitante */}}
+    {{ $data.Set "height" $resized.Height }}
 
     {{ $webp := $data.Get "webp" }}
     {{ $fallback := $data.Get "fallback" }}
     {{ $imgWidth := $data.Get "width" }}
     {{ $imgHeight := $data.Get "height" }}
 
-    <div style="max-width: {{ $imgWidth }}px; margin-left: auto; margin-right: auto;">
-      <picture>
-        <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
-        <img src="{{ $fallback.RelPermalink }}"
-             alt="{{ .Text }}"
-             loading="lazy"
-             decoding="async"
-             width="{{ $imgWidth }}"
-             height="{{ $imgHeight }}"
-             style="max-width: 100%; height: auto; display: block;" />
-      </picture>
-    </div>
+    {{/* A <picture> e <img> ocuparão 100% da <figure> */}}
+    <picture>
+      <source srcset="{{ $webp.RelPermalink }}" type="image/webp">
+      <img src="{{ $fallback.RelPermalink }}"
+           alt="{{ .Text }}"
+           loading="lazy"
+           decoding="async"
+           width="{{ $imgWidth }}"
+           height="{{ $imgHeight }}"
+           style="width: 100%; height: auto; display: block; border-radius: 5px;" />
+    </picture>
 
     {{ with .Title }}
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--cor-secundaria); margin-top: 0.5em;">
@@ -47,18 +39,19 @@
     {{ end }}
   </figure>
 {{ else }}
-  <figure style="margin: 1.5em auto; max-width: 100%; display: block;">
+  {{/* Fallback se não for Page Resource (ex: URL externa ou imagem da pasta /static) */}}
+  <figure style="margin: 1.5em 0; width: 100%;">
     <img src="{{ .Destination | safeURL }}"
          alt="{{ .Text }}"
          loading="lazy"
-         width="1200"
+         width="1200" {{/* Atributos de dimensão originais para aspect-ratio */}}
          height="630"
-         style="max-width: 100%; height: auto; display: block;" />
+         style="width: 100%; height: auto; display: block; border-radius: 3px;" />
     {{ with .Title }}
       <figcaption style="text-align: center; font-size: 0.9em; color: var(--cor-secundaria); margin-top: 0.5em;">
         {{ . | markdownify }}
       </figcaption>
     {{ end }}
-    <p style="color: red; font-size: small; text-align: center;">(Aviso: A imagem '{{ .Destination | safeURL }}' não é um page resource, por isso as otimizações não foram aplicadas.)</p>
+    <p style="color: red; font-size: small; text-align: center;">(Aviso: A imagem '{{ .Destination | safeURL }}' não é um Page Resource. Otimizações e redimensionamento específico não foram aplicados, apenas responsividade básica.)</p>
   </figure>
 {{ end }}
