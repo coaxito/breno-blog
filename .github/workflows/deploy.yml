@@ -29,8 +29,8 @@ jobs:
       - name: Setup Hugo # Configura o ambiente Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: 'latest' # Usa a versão mais recente do Hugo. Você pode fixar uma (ex: '0.125.7')
-          # extended: true # Descomente se seu tema ou CSS usa SASS/SCSS
+          hugo-version: 'latest'
+          extended: true
 
       - name: Build Hugo site # Constrói seu site Hugo
         run: hugo --minify # A baseURL é pega do seu hugo.toml
