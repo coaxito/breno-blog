@@ -51,4 +51,4 @@ Sem dúvidas, 'eclética' é a palavra que melhor define a trilha sonora de Beyo
 
 A escolha foi difícil, pois todas as faixas são surpreendentes e contribuem igualmente para a grandiosidade desta obra. Sempre que revisito este clássico, sinto uma nostalgia profunda e um orgulho enorme por ter vivenciado essa experiência.
 
-Meu profundo agradecimento ao Christophe Héral por compor esta obra-prima, e à minha querida irmã, por fazer parte disso.
+Meu profundo agradecimento ao Christophe Héral por compor esta obra-prima, e à minha querida irmã, por fazer parte dessa história.
