@@ -9,46 +9,34 @@ tags = ["Música", "Games", "Beyond Good and Evil", "Trilha Sonora", "Nostalgia"
 image = "/images/thumbnails/jade_com_camera.jpg"
 +++
 
-Passei a infância inteira jogando videogame ao lado da minha irmã mais velha, e sem dúvidas, Beyond Good and Evil, clássico da Ubisoft lançado em 2003, é um dos jogos mais marcantes das nossas vidas.
+O clássico da Ubisoft lançado em 2003 (curiosamente, o meu ano de nascimento), é um dos jogos mais importantes da minha vida.
 
-Com seu enredo rico e universo imersivo — nos fez enxergar os jogos como algo ainda maior: uma forma de arte capaz de despertar sentimentos profundos e ensinar lições valiosas.
+A jornada é acompanhada por uma trilha sonora extraordinária, que transmite com precisão a atmosfera caótica da guerra, enquanto encoraja o espírito determinado da protagonista e aprofunda a narrativa com temas únicos que definem os personagens e cenários.
 
-![Jade em Beyond Good and Evil usando sua câmera fotográfica, uma mecânica central do jogo para investigações e documentação da vida selvagem.](jade_com_camera.jpg "Reprodução: Ubisoft")
-
-Cada segundo dessa aventura é acompanhado por uma trilha sonora impecável, que transmite com perfeição a atmosfera caótica desse mundo em guerra, ao mesmo tempo que nos conforta com uma centelha de esperança e transformação.
-
-Quero destacar minhas cinco faixas favoritas da genial obra de Christophe Héral e prestar homenagem ao seu trabalho, que influenciou profundamente meu amor pela música.
+Em homenagem à obra de Christophe Héral, destaco cinco faixas geniais que influenciaram minha paixão pela música ainda na infância.
 
 ### 1. "Mammago Garage"
 
-Simplesmente o melhor reggae alternativo de todos os tempos. A sonoridade carismática e a letra icônica revelam com clareza o quanto o universo do jogo é imersivo. Hal, Bakubar e Issam — a família de rinocerontes jamaicanos e rastafáris são personagens absolutamente inesquecíveis.
+O melhor reggae alternativo de todos os tempos. A sonoridade carismática e a letra icônica apresentam com perfeição os irmãos rinocerontes, influenciados pela cultura jamaicana e rastafári — Hal, Bakubar e Issam são personagens absolutamente inesquecíveis.
 
 ### 2. "Salud Juanito"
 
-O prelúdio da minha paixão pela música latina. Uma canção eletrizante cheia de adrenalina e personalidade. A trilha sonora perfeita para as corridas clandestinas de Hillys, que ganham um ritmo ainda mais vibrante e divertido.
+O prelúdio da minha paixão pela música latina: uma canção eletrizante, cheia de adrenalina e personalidade. A trilha sonora perfeita para as corridas clandestinas de Hillys e para o jogo do disco de Francis no Akuda Bar — momentos que ganham um ritmo ainda mais vibrante e divertido.
 
 ### 3. "Ming's Melody"
 
-É Impossível não se sentir acolhido com a calmaria zen, delicada e meditativa desta composição. Meu primeiro contato com a sonoridade fascinante dos instrumentos tradicionais da Ásia.
+É impossível não se sentir acolhido pela calmaria zen, delicada e meditativa desta composição, que marcou meu primeiro contato com a sonoridade fascinante dos instrumentos tradicionais da Ásia.
 
 ### 4. "Slaughterhouse Scramble"
 
-O ritmo frenético e a energia crua da guitarra distorcida, somados aos vocais gritantes, caóticos e scáticos, me deixavam de boca aberta e olhos arregalados. Eu não entendia absolutamente nada, mas dançava como se estivesse possuído.
+O ritmo louco e a energia crua da guitarra distorcida, somados aos vocais gritantes, caóticos e scat, me deixavam de boca aberta e olhos arregalados. Eu não entendia absolutamente nada, mas dançava freneticamente.
 
 ### 5. "Akuda House Propaganda"
 
 O estabelecimento mais icônico do distrito dos pedestres é ambientado por um hip-hop improvisado e contagiante que traduz perfeitamente o espírito underground do lugar.
 
-### Menção Honrosa: "Home Sweet Home"
-
-As melodias tocantes e introspectivas nos fazem revisitar todos os desafios enfrentados e obstáculos vencidos, reforçando o valor da determinação e a importância de nunca desistir.
-
 ---
 
-![Vista panorâmica do canal da cidade de Hillys em Beyond Good and Evil, com o hovercraft de Jade e Pey'j na água, arquitetura local, e o icônico letreiro 'Hillys' ao entardecer com naves voando.](passeando_em_hillys.jpg "Reprodução: Ubisoft")
-
-Sem dúvidas, 'eclética' é a palavra que melhor define a trilha sonora de Beyond Good and Evil.
-
-A escolha foi difícil, pois todas as faixas são surpreendentes e contribuem igualmente para a grandiosidade desta obra. Sempre que revisito este clássico, sinto uma nostalgia profunda e um orgulho enorme por ter vivenciado essa experiência.
+Na minha opinião, ‘eclética’ e ‘carismática’ são as palavras que melhor definem a trilha sonora épica de *Beyond Good and Evil.*
 
 Meu profundo agradecimento ao Christophe Héral por compor esta obra-prima, e à minha querida irmã, por fazer parte dessa história.

@@ -30,10 +30,8 @@ Se você gostou do blog, tem alguma sugestão ou apenas gostaria de enviar uma m
 
 ## Licença
 
-O código-fonte das páginas e a configuração deste blog são dedicados ao **Domínio Público** através da [The Unlicense](https://unlicense.org/).
+O código-fonte das páginas e as configurações são dedicados ao **Domínio Público** através da [The Unlicense](https://unlicense.org/).
 
-Isso significa que você pode copiar, modificar, distribuir e usar o código, mesmo para fins comerciais, tudo isso sem pedir permissão.
-
-Créditos não são necessários, mas são apreciados se você achar algo interessante para seu workflow!
+Isso significa que você pode copiar, modificar, distribuir e usar o código, até mesmo para fins comerciais.
 
 Por outro lado, o conteúdo textual publicado no blog são de minha autoria, salvo indicação em contrário, e estão protegidos por direitos autorais.
