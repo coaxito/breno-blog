@@ -1,16 +1,21 @@
 /*Paleta de cores */
 
 :root {
-    --cor-fundo: #f4f4f4;
-    --cor-principal: #1a1a1a;
-    --cor-secundaria: #4d4d4d;
-    --cor-link: #507aa4;
+    --cor-fundo: #fefbf7;
+    --cor-principal: #3a2e2d;
+    --cor-secundaria: #7c6e64;
+    --cor-link: #91633f;
+    --cor-fundo-codigo-inline: rgba(145, 99, 63, 0.15);
+    --cor-texto-codigo-inline: #584738;
 }
+
 html.dark-theme {
-    --cor-fundo: #1a1a1a;
-    --cor-principal: #e6e6e6;
-    --cor-secundaria: #d0d0d0;
-    --cor-link: #c6dff5;
+    --cor-fundo: #181511;
+    --cor-principal: #fffaf3;
+    --cor-secundaria: #e4ddc9;
+    --cor-link: #e6c68b;
+    --cor-fundo-bloco-codigo: #2c241f;
+    --cor-texto-codigo-inline: #f7f4ec;
 }
 
 /*Fonte: Outfit (Self-hosted) */
@@ -210,4 +215,23 @@ article.post .post-header .post-meta {
 
 html:not(.dark-theme) #theme-icon-img {
     filter: invert(1)
+}
+
+:not(pre) > code {
+    background-color: var(--cor-fundo-codigo-inline);
+    color: var(--cor-texto-codigo-inline);
+    padding: 0 0.5em;
+    border-radius: 0px;
+    font-family: 'Menlo', 'Consolas', 'Liberation Mono', 'Courier New', monospace;
+    font-size: 0.9em;
+
+    white-space: normal;
+    word-break: break-word;
+
+    display: inline-block;
+    line-height: 1.35;
+    vertical-align: middle;
+
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
