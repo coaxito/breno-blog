@@ -135,7 +135,7 @@ h1 {
 }
 
 article.post .post-header h1 {
-    max-width: 80%;
+    max-width: 75%;
 }
 
 h2, h3 {
@@ -177,7 +177,7 @@ p {
     font-size: 1em;
     margin-right: 20px;
     line-height: 1.5;
-    max-width: 65%;
+    max-width: 66%;
 }
 
 .post-list-detailed .post-title-link:hover {
@@ -229,9 +229,13 @@ html:not(.dark-theme) #theme-icon-img {
     word-break: break-word;
 
     display: inline-block;
-    line-height: 1.35;
+    line-height: 1.25;
     vertical-align: middle;
 
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
+}
+
+main#site-main.container p {
+    max-width: 90%;
 }
