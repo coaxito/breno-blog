@@ -29,7 +29,7 @@ Editar todas as faixas simultaneamente facilita a inclusão da capa e de outros 
 
 Para obter a imagem da capa, pesquiso no Google Imagens pelo nome do artista e do álbum, adicionando "Tidal", "Deezer" ou "Amazon" à consulta. Essa prática geralmente resulta em imagens com resolução a partir de 1200x1200px.
 
-Para padronizar o tamanho, utilizo o Canva no navegador. Crio um novo design de 1500x1500 pixels, importo a imagem original, redimensiono-a para que se encaixe perfeitamente no quadro e, por fim, exporto o resultado em JPG.
+Para padronizar o tamanho, utilizo o Canva no navegador. Em um template com 1500x1500 pixels, importo a imagem original, redimensiono-a para que se encaixe perfeitamente no quadro e, por fim, exporto o resultado em JPG.
 
 Gosto de manter o arquivo da capa dentro da pasta do álbum. Assim, minha biblioteca digital fica organizada e simplifica o backup.
 
