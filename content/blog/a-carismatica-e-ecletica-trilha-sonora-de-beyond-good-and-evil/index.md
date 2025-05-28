@@ -37,6 +37,6 @@ O estabelecimento mais icônico do distrito dos pedestres é ambientado por um h
 
 ---
 
-Na minha opinião, ‘carismática’ e ‘eclética’ são as palavras que melhor definem a trilha sonora épica de *Beyond Good and Evil.*
+Na minha opinião, ‘carismática’ e ‘eclética’ são as palavras que melhor definem a maravilhosa trilha sonora de *Beyond Good and Evil.*
 
 Meu profundo agradecimento ao Christophe Héral por compor esta obra-prima, e à minha querida irmã, por fazer parte dessa história.
