@@ -235,7 +235,3 @@ html:not(.dark-theme) #theme-icon-img {
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
-
-main#site-main.container p {
-    max-width: 90%;
-}

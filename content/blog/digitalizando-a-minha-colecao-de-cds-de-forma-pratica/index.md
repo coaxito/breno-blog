@@ -15,7 +15,7 @@ Estou utilizando a versão em flatpak no Ubuntu 24.04 LTS. O meu gravador óptic
 
 ```flatpak install flathub org.gnome.SoundJuicer```
 
-Escolhi extrair em MP3 por ser um formato mais compacto e versátil para meus dispositivos móveis. O processo de extração varia de 10 a 15 minutos, conforme o número de faixas.
+Escolhi extrair em FLAC por ser um formato sem perdas, que preserva a qualidade original dos CDs e facilita futuras conversões para outros formatos. O processo de extração varia de 10 a 20 minutos, conforme o número de faixas.
 
 O software consulta o MusicBrainz para obter os metadados do disco e organiza os arquivos em pastas separadas por artista e álbum.
 
@@ -34,3 +34,5 @@ Para padronizar o tamanho, utilizo o Canva no navegador. Em um projeto com 1500x
 Gosto de manter o arquivo da capa dentro da pasta do álbum. Assim, minha biblioteca digital fica organizada e simplifica o backup.
 
 Com uma coleção considerável pela frente, a digitalização completa ainda vai levar um tempo. Mas, eventualmente, devo ter tudo concluído e armazenado em nuvem.
+
+Estou compartilhando atualizações sobre o procedimento nesta [thread no Twitter](https://x.com/c0axit0/status/1927429115348447480).
