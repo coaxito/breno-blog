@@ -17,7 +17,7 @@ Estou utilizando a versão em flatpak no Ubuntu 24.04 LTS. O meu gravador óptic
 
 Optei por extrair em FLAC, um formato sem perdas que mantém a qualidade original dos CDs e facilita conversões futuras para outros formatos. No meu computador, o tempo de extração varia de 10 a 25 minutos, dependendo da quantidade e duração das faixas.
 
-O disco Abbey Road do The Beatles, com dezessete faixas, ocupa cerca de 297,7 MB no total. Os tamanhos individuais variam bastante: a menor faixa, Her Majesty, tem 25 segundos de duração e 2,1 megabytes, enquanto a maior, I Want You (She’s So Heavy), dura 7 minutos e 47 segundos e ocupa 50,0 megabytes.
+O disco Abbey Road dos Beatles, com dezessete faixas, ocupa cerca de 297,7 megabytes no total. Os tamanhos individuais variam: a menor faixa, "Her Majesty", tem 25 segundos e 2,1MB, enquanto a maior, "I Want You (She’s So Heavy)", dura 7 minutos e 47 segundos e ocupa 50,0MB.
 
 O software consulta o banco de dados do MusicBrainz para obter os metadados do disco e organiza os arquivos em pastas por artista e álbum. Depois, uso o Ear Tag para ajustar e preencher com precisão o restantes dos dados, mantendo a interface simples e prática.
 
