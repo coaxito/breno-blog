@@ -33,4 +33,4 @@ Gosto de manter o arquivo da capa dentro da pasta do álbum. Assim, minha biblio
 
 Com uma coleção considerável pela frente, a digitalização completa ainda vai levar um tempo. Mas, eventualmente, devo ter tudo concluído e armazenado em nuvem.
 
-Estou compartilhando atualizações sobre o procedimento [nesta thread no 𝕏](https://x.com/c0axit0/status/1927429115348447480).
+Estou compartilhando atualizações sobre o procedimento [nesta thread no 𝕏](https://x.com/c0axit0/status/1928269346981228760).
