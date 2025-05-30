@@ -1,7 +1,7 @@
 +++
 title = 'Digitalizando a minha coleção de CDs de forma prática'
 date = "2025-05-26"
-lastmod = "2025-05-27"
+lastmod = "2025-05-29"
 author = "Breno Santana"
 description = "Conheça o meu processo prático e descomplicado para digitalizar e organizar uma biblioteca digital de CDs no Linux."
 url = "/digitalizando-a-minha-colecao-de-cds-de-forma-pratica/"
@@ -15,13 +15,11 @@ Estou utilizando a versão em flatpak no Ubuntu 24.04 LTS. O meu gravador óptic
 
 ```flatpak install flathub org.gnome.SoundJuicer```
 
-Escolhi extrair em FLAC por ser um formato sem perdas, que preserva a qualidade original dos CDs e facilita futuras conversões para outros formatos. O processo de extração varia de 10 a 20 minutos, conforme o número de faixas.
+Optei por extrair em FLAC, um formato sem perdas que mantém a qualidade original dos CDs e facilita conversões futuras para outros formatos. No meu computador, o tempo de extração varia de 10 a 25 minutos, dependendo da quantidade e duração das faixas.
 
-O software consulta o MusicBrainz para obter os metadados do disco e organiza os arquivos em pastas separadas por artista e álbum.
+O disco Abbey Road do The Beatles, com dezessete faixas, ocupa cerca de 297,7 MB no total. Os tamanhos individuais variam bastante: a menor faixa, Her Majesty, tem 25 segundos de duração e 2,1 megabytes, enquanto a maior, I Want You (She’s So Heavy), dura 7 minutos e 47 segundos e ocupa 50,0 megabytes.
 
-Um disco de doze faixas, como o Short'n Sweet da Sabrina Carpenter, ocupa entre 2,2 e 4,1 megabytes por faixa, totalizando 40 MB.
-
-A próxima etapa é preencher precisamente os metadados, e, mantendo o mesmo padrão de interface e praticidade, utilizo o Ear Tag.
+O software consulta o banco de dados do MusicBrainz para obter os metadados do disco e organiza os arquivos em pastas por artista e álbum. Depois, uso o Ear Tag para ajustar e preencher com precisão o restantes dos dados, mantendo a interface simples e prática.
 
 ```flatpak install flathub app.drey.EarTag```
 
@@ -35,4 +33,4 @@ Gosto de manter o arquivo da capa dentro da pasta do álbum. Assim, minha biblio
 
 Com uma coleção considerável pela frente, a digitalização completa ainda vai levar um tempo. Mas, eventualmente, devo ter tudo concluído e armazenado em nuvem.
 
-Estou compartilhando atualizações sobre o procedimento nesta [thread no Twitter](https://x.com/c0axit0/status/1927429115348447480).
+Estou compartilhando atualizações sobre o procedimento [nesta thread no 𝕏](https://x.com/c0axit0/status/1927429115348447480).
