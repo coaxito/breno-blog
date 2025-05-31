@@ -1,9 +1,9 @@
 baseURL = "https://coaxito.com/"
 languageCode = "pt-br"
-title = "Breno's Blog"
+title = "Coaxito's Home"
 
 [params]
-  description = "Breno's Blog é o cantinho digital aconchegante de Breno Santana, onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
+  description = "Coaxito's Home é o cantinho digital aconchegante de Breno Santana (@c0axit0), onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
   author = "Breno Santana"
   defaultOgImage = "/images/default-og-image.jpg"
   twitterUsername = "c0axit0"

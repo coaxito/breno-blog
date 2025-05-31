@@ -1,9 +1,11 @@
 +++
-title = "Página Inicial"
-description = "Breno's Blog é o cantinho digital aconchegante de Breno Santana, onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
+title = "Coaxito's Home"
+description = "Coaxito's Home é o cantinho digital aconchegante de Breno Santana (@c0axit0), onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
 +++
 
-Adoro escrever, compor e fotografar.
+Olá, meu nome é Breno Santana!
+
+Meu principal hobby é escrever, mas também sou fotógrafo e artista independente.
 
 Os principais assuntos dos [meus textos](/blog) são tecnologia, música e outros tópicos pessoais.
 

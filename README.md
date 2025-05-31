@@ -6,7 +6,7 @@ Este é o [código-fonte](https://github.com/coaxito/breno-blog) do meu blog pes
 
 ## Sobre o blog
 
-Breno's Blog é um site pessoal minimalista e aconchegante, dedicado a explorar tópicos como música, tecnologia, internet, fotografia e outros temas pessoais.
+Coaxito's Home é um site pessoal minimalista e aconchegante, dedicado a explorar tópicos como música, tecnologia, internet, fotografia e outros temas pessoais.
 
 É um projeto de hobby, desenvolvido e mantido com muito carinho, amor e café.
 
