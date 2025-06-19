@@ -35,7 +35,7 @@ O ritmo louco e a energia crua da guitarra distorcida, somados aos vocais gritan
 
 O estabelecimento mais icônico do distrito dos pedestres é ambientado por um hip-hop improvisado e contagiante que traduz perfeitamente o espírito underground do lugar.
 
----
+### Uma das minhas obras favoritas!
 
 Na minha opinião, ‘carismática’ e ‘eclética’ são as palavras que melhor definem a maravilhosa trilha sonora de *Beyond Good and Evil.*
 
