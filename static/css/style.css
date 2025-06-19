@@ -201,26 +201,19 @@ article.post .post-header .post-meta {
     justify-content: center;
 }
 
-#theme-icon-img {
+#theme-icon-svg svg {
     width: 1.3em;
     height: 1.3em;
     vertical-align: middle;
     position: relative;
-}
-
-#theme-icon-svg svg {
-    width: 1.5em;
-    height: 1.5em;
-    vertical-align: middle;
-    position: relative;
     top: -1px;
     color: #3a2e2d;
-    transition: color 0.3s;
+    transition: color 0.5s;
 }
 html.dark-theme #theme-icon-svg svg {
     color: #fffaf3;
     color: #3a2e2d;
-    transition: color 0.3s;
+    transition: color 0.5s;
 }
 html.dark-theme #theme-icon-svg svg {
     color: #fffaf3;
