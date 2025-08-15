@@ -5,7 +5,6 @@ lastmod = "2025-05-29"
 author = "Breno Santana de Souza Gouveia"
 description = "Conheça o meu processo prático e descomplicado para digitalizar e organizar uma biblioteca digital de CDs no Linux."
 url = "/digitalizando-a-minha-colecao-de-cds-de-forma-pratica-no-linux/"
-tags = ["Música", "CDs", "Digitalização", "Linux", "Coleção"]
 image = "/images/thumbnails/cd_minimalista.jpg"
 +++
 

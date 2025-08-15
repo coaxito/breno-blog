@@ -5,7 +5,6 @@ lastmod = "2025-05-17"
 author = "Breno Santana de Souza Gouveia"
 description = "Uma viagem nostálgica pela carismática e eclética trilha sonora de Beyond Good and Evil. Uma homenagem às geniais composições de Christophe Héral que marcaram minha infância."
 url = "/a-carismatica-e-ecletica-trilha-sonora-de-beyond-good-and-evil/"
-tags = ["Música", "Games", "Beyond Good and Evil", "Trilha Sonora", "Nostalgia"]
 image = "/images/thumbnails/jade_com_camera.jpg"
 +++
 
