@@ -40,8 +40,8 @@ Tenho uma coleção considerável pela frente, sendo assim, a digitalização co
 
 ## Observações utéis
 
-Para manter a qualidade original e facilitar futuras conversões, prefira formatos sem compressão.
+1. Para manter a qualidade original e facilitar futuras conversões, prefira formatos sem compressão.
 
-Organize sua biblioteca usando uma hierarquia de pastas simplificada.
+2. Organize sua biblioteca usando uma hierarquia de pastas simplificada.
 
-Remover poeira e sujeira com um pano macio ajuda a evitar erros e travamentos.
+3. Remover poeira e sujeira com um pano macio ajuda a evitar erros e travamentos.

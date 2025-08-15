@@ -1,11 +1,11 @@
 +++
 title = 'Plantasia encanta com seu conceito e misticismo'
 date = "2025-01-31"
-lastmod = "25-01-31"
+lastmod = "2025-01-31"
 author = "Breno Santana de Souza Gouveia"
-description = "..."
+description = "Conheça Plantasia, o álbum cult de Mort Garson criado para encantar plantas e amantes da natureza, unindo sintetizador Moog, misticismo e melodias acolhedoras."
 url = "/plantasia-encanta-com-seu-conceito-e-misticismo"
-image = "/images/thumbnails/cd_minimalista.jpg"
+image = "/images/thumbnails/plantasia.jpg"
 +++
 
 ## O presente perfeito para as suas plantas

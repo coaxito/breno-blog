@@ -3,9 +3,9 @@ title = 'Begônias, aquarelas e as estrelas do nosso amor'
 date = "2025-02-17"
 lastmod = "2025-02-17"
 author = "Breno Santana de Souza Gouveia"
-description = "..."
+description = "Uma carta apaixonada que celebra trinta e um dias de amor intenso, conexão profunda e momentos inesquecíveis com Maria Eduarda, minha inspiração e porto seguro."
 url = "/begonias-aquarelas-e-as-estrelas-do-nosso-amor"
-image = "/images/thumbnails/cd_minimalista.jpg"
+image = "/images/thumbnails/montanhas_aquarelas.jpg"
 +++
 
 ## Um abrigo quentinho para meu coração

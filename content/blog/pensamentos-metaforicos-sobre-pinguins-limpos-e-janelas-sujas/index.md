@@ -3,9 +3,9 @@ title = 'Pensamentos metafóricos sobre pinguins limpos e janelas sujas'
 date = "2025-04-29"
 lastmod = "2025-04-29"
 author = "Breno Santana de Souza Gouveia"
-description = "..."
+description = "Uma jornada divertida com pinguins, Linux e tecnologia — do carisma do Tux à eficiência no dia a dia, até aventuras interplanetárias em Marte."
 url = "/pensamentos-metaforicos-sobre-pinguins-limpos-e-janelas-sujas"
-image = "/images/thumbnails/cd_minimalista.jpg"
+image = "/images/thumbnails/pinguim_cheiroso.jpg"
 +++
 
 ## Era uma vez um pinguim carismático...
@@ -46,6 +46,8 @@ Existem pinguins bem remunerados trabalhando nos bastidores dos servidores que h
 
 E se isso já te parece impressionante, saiba que eles foram além — para onde nenhum humano jamais pisou (pelo menos por enquanto).
 
-O helicóptero Ingenuity, que voa sobre o solo marciano ao lado do rover Perseverance, opera com um sistema baseado em Linux.
+O helicóptero Ingenuity, que voa sobre o solo marciano ao lado do rover Perseverance, opera com um sistema baseado em Linux.[^1]
 
 Em meio ao frio extremo e à atmosfera rarefeita de Marte, lá estão eles, provando que pinguins podem sim voar — pelo menos no espaço.
+
+[^1]: [Linux has made it to Mars"](http://johnmacfarlane.net/pandoc/README.html#pandocs-markdown) do The Verge.

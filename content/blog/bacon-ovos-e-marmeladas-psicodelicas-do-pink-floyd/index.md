@@ -3,9 +3,9 @@ title = 'Bacon, ovos e marmeladas psicodélicas do Pink Floyd'
 date = "2025-03-31"
 lastmod = "2025-03-31"
 author = "Breno Santana de Souza Gouveia"
-description = "..."
+description = "Reviva o café da manhã psicodélico do Pink Floyd em 'Alan's Psychedelic Breakfast', explorando sons, histórias e curiosidades do álbum Atom Heart Mother."
 url = "/bacon-ovos-e-marmeladas-psicodelicas-do-pink-floyd"
-image = "/images/thumbnails/cd_minimalista.jpg"
+image = "/images/thumbnails/vaquinha.jpg"
 +++
 
 ## Talheres à mesa, é hora de tomar café
