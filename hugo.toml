@@ -1,10 +1,10 @@
-baseURL = "https://coaxito.com/"
+baseURL = "https://blog.coaxito.com/"
 languageCode = "pt-br"
-title = "Coaxito's Café"
+title = "Blog do Coaxito"
 
 [params]
-  description = "Coaxito's Café é o cantinho digital aconchegante de Breno Santana (@c0axit0), onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
-  author = "Breno Santana"
+  description = "Blog do Coaxito é o cantinho digital aconchegante de Breno Santana (@c0axit0), onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
+  author = "Breno Santana de Souza Gouveia"
   defaultOgImage = "/images/default-og-image.jpg"
   twitterUsername = "c0axit0"
   logo = "/images/logo.png"
