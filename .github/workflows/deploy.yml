@@ -1,38 +1,48 @@
-name: Deploy Hugo Blog
+name: Deploy Breno's Blog to GitHub Pages
 
 on:
   push:
     branches:
-      - main
+      - main #
+  workflow_dispatch:
 
 jobs:
-  deploy:
+  build-deploy:
     runs-on: ubuntu-latest
-
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: "pages"
+      cancel-in-progress: true
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Checkout do repositório
+      - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          submodules: 'true'
+          submodules: true
           fetch-depth: 0
 
-      - name: Configurar Hugo
+      - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: 'latest'
+          extended: true
 
-      - name: Gerar o site Hugo
+      - name: Build Hugo site
         run: hugo --minify
 
-      - name: Deploy para a Hostinger via FTP
-        uses: SamKirkland/FTP-Deploy-Action@v4.3.0
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
         with:
-          server: ${{ secrets.FTP_HOST }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          protocol: ftps
-          port: 21
-          local-dir: './public/'
-          server-dir: 'blog.coaxito.com/'
-          state-name: .ftp-deploy-state
-          log-level: verbose
+          path: ./public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
