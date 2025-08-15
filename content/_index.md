@@ -3,10 +3,8 @@ title = "Blog do Coaxito"
 description = "Blog do Coaxito é o cantinho digital aconchegante de Breno Santana (@c0axit0), onde ele escreve sobre música, tecnologia, internet e outros tópicos pessoais."
 +++
 
-Meu nome é Breno Santana!
+Olá, eu me chamo Breno!
 
-Sou fotógrafo, designer, redator e artista independente.
+Sou um nerd apaixonado por música e tecnologia. Também adoro gatos, videogames e filosofia.
 
-Os principais assuntos dos [meus textos](/blog) são tecnologia, música, internet e videogames.
-
-Também compartilho ocasionalmente no [𝕏](https://x.com/c0axit0) interesses e pensamentos do meu cotidiano.
+Trabalho como fotógrafo, designer e redator.
